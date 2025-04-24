@@ -4,7 +4,9 @@ pipeline {
         stage('Build') {
             steps {
                 echo 'Hello world!'
-                echo 'La branche est : ${env.GIT_BRANCH}'
+                echo "BRANCH_NAME = ${env.BRANCH_NAME}"
+                echo "GIT_BRANCH  = ${env.GIT_BRANCH}"
+                
             }
         }
 
